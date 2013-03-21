@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Michael Kaminski -- Developer -- @pixeln3rd
 
 # THANKS
 
-    <name>
+    To everyone involved in initializr, awesome job!
+    To The League of Moveable Type - Everyone loves fancy fonts, kudos ;)
 
 # TECHNOLOGY COLOPHON
 

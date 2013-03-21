@@ -1,0 +1,18 @@
+DirectoryIndex index.php
+
+# remove the next 3 lines if you see a 500 server error
+#php_flag register_globals off
+#php_flag magic_quotes_gpc off
+#php_value display_errors 0
+
+FileETag none
+ServerSignature Off
+
+Options All -Indexes
+
+ErrorDocument 400 /badrequest.html
+ErrorDocument 401 /authreqd.html
+ErrorDocument 403 /forbid.html
+ErrorDocument 404 /notfound.html
+ErrorDocument 500 /serverr.html
+
