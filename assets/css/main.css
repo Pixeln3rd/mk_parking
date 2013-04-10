@@ -92,10 +92,28 @@ textarea {
     font-style: normal;
 
 }
+@font-face {
+  font-family: 'Atomic Age';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Atomic Age'), local('AtomicAge'), url('../fonts/atomic-age.woff') format('woff');
+}
+@font-face {
+  font-family: 'Oxygen Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('../fonts/oxygen-mono.woff') format('woff');
+}
+@font-face {
+  font-family: 'Playball';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playball'), local('Playball-Regular'), url('../fonts/playball.woff') format('woff');
+}
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    background-image: url(/images/dots.jpg);
+    background-image: url('../images/dots.jpg');
     background-repeat: repeat;
 }
 
@@ -225,7 +243,7 @@ h1.title{
 h1,h2,h3{
     font-family:'BlackoutMidnight', Arial, sans-serif;
 }
-aside h3{
+/*aside h3{
     padding: 0px;
     margin: 0px;
     color: #000000;
@@ -271,7 +289,86 @@ aside ul li a:hover{
 .link_twitter{background-color:#33ccff;}
 .link_codepen{background-color:#663399;}
 .link_blog{background-color:#ffcc00;}
-.link_google{background-color:#cc3333;}
+.link_google{background-color:#cc3333;}*/
+div.social-wrap h3{
+    color: #C94087;
+    font-size: 28px;
+    padding: 10px 0 10px 0;
+    margin: 0px;
+    text-shadow: 0px 2px 0px #fcd40a;
+    filter: dropshadow(color=#fcd40a, offx=0, offy=2);
+}
+div.social-wrap h3 em{
+    font-family: 'Atomic Age', cursive;
+}
+div.social-wrap h3 span{
+    font-family: 'Playball', cursive;
+}
+div.social-wrap ul{
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+div.social-wrap ul li{
+    display: block;
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+div.social-wrap ul li a{
+    display: block;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    height: auto;
+    top: -45%;
+    position: absolute;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    font-size: 16px;
+    font-family: 'Atomic Age', cursive;
+    color: #ffffff;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+div.social-wrap ul li a:hover{
+    top: 0px;
+}
+.link_github{background-color:#d1d1d1;}
+.link_twitter{background-color:#b1b1b1;}
+.link_codepen{background-color:#c4c4c4;}
+.link_blog{background-color:#a2a2a2;}
+.link_google{background-color:#888888;}
+.link_github:hover{background-color:#336699;}
+.link_twitter:hover{background-color:#33ccff;}
+.link_codepen:hover{background-color:#663399;}
+.link_blog:hover{background-color:#ffcc00;}
+.link_google:hover{background-color:#cc3333;}
+
+.shadow {
+         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+         box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+
+.shadow:before,.shadow:after {
+        content:"";
+        position:absolute;
+        z-index:-2;
+        }
+.extend:hover {
+            -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+               -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+                    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+ 
+}
 a.html5badge{
     background-color: none !important;
     border-bottom: none !important;
@@ -469,7 +566,6 @@ article.portfolio section .port_content{
 /* WIDE: Main */
     .main-container {
         width: 640px;
-        
         margin-top: 15px;
         margin-right: auto;
         margin-bottom: 0;
@@ -507,7 +603,7 @@ article.portfolio section .port_content{
 
 @media only screen and (min-width: 1880px) {
 body{
-background: url(/images/full_page.jpg) no-repeat center center fixed; 
+background: url('../images/full_page.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -726,7 +822,7 @@ aside h3{
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-    background-image: url('/images/fancybox_sprite.png');
+    background-image: url('../images/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -744,7 +840,7 @@ aside h3{
 #fancybox-loading div {
     width: 44px;
     height: 44px;
-    background: url('/images/fancybox_loading.gif') center center no-repeat;
+    background: url('../images/fancybox_loading.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -764,7 +860,7 @@ aside h3{
     height: 100%;
     cursor: pointer;
     text-decoration: none;
-    background: transparent url('/images/blank.gif'); /* helps IE */
+    background: transparent url('../images/blank.gif'); /* helps IE */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     z-index: 8040;
 }
@@ -825,7 +921,7 @@ aside h3{
     overflow: hidden;
     display: none;
     z-index: 8010;
-    background: url('/images/fancybox_overlay.png');
+    background: url('../images/fancybox_overlay.png');
 }
 
 .fancybox-overlay-fixed {

@@ -6,17 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Michael Kaminski | Freelance Web Designer</title>
+        <title>Michael Kaminski | Freelance Front End Developer | Web Designer</title>
         <meta name="description" content="My name is Michael Kaminski and I'm a freelance web designer and developer with experience in HTML, CSS, JavaScript, PHP. Contact me at hello@michaelkaminski.me">
         <meta name="keywords" content="web design, web development, web designer, web, freelance, wordpress developer, wordpress, website design, website development, html, css, javascript, html5, css3, michael kaminski">
         <meta name="google-site-verification" content="ZHvfTRpKVqvbhwjtGnYbOKgTSUyuDEAyc4YM2iec4eo" />
         <meta name="viewport" content="width=device-width">
-
         <link rel="stylesheet" href="assets/css/normalize.min.css">
         <link rel="stylesheet" href="assets/css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Oxygen+Mono' rel='stylesheet' type='text/css'>
         <link rel="icon" href="assets/images/favicon.png">
-        
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
