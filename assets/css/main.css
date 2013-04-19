@@ -67,6 +67,65 @@ textarea {
     background-color: #333333;
 }
 
+/* Helper classes */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
 
 /* FONTS */
 @font-face {
@@ -243,53 +302,53 @@ h1.title{
 h1,h2,h3{
     font-family:'BlackoutMidnight', Arial, sans-serif;
 }
-/*aside h3{
-    padding: 0px;
-    margin: 0px;
-    color: #000000;
-}
-aside ul{
-    display: block;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-aside ul li{
-    display: block;
-    width: 20%;
-    margin: 0px;
-    padding: 0px;
+
+.content {
+    padding-top: 0px;
+    padding-right: 0;
+    padding-bottom: 0px;
+    padding-left: 0;
     float: left;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-}
-aside ul li a{
-    display: block;
     width: 100%;
-    margin: 0px;
-    padding-bottom: 10px;
+}
+.content .block {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0px;
     text-align: center;
-    text-decoration: none;
-    height: 40px;
-    top: -40px;
+    position: relative;
+}
+.content .block #suit {
+    height: 475px;
+    width: 330px;
+    display: inline-block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: url('../images/sprite.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.75s ease-in-out;
+    -moz-transition: all 0.75s ease-in-out;
+    -o-transition: all 0.75s ease-in-out;
+}
+.content .block #suit span {
     position: absolute;
-    padding-top: 15px;
-    font-size: 16px;
-    font-family:'Blackout2AM', Arial, sans-serif;
-    color: #ffffff;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-image: url('../images/sprite.png');
+    background-position: right top;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition:    opacity 0.5s;
+    -o-transition:      opacity 0.5s;
 }
-aside ul li a:hover{
-      top: 0px;
+.content .block #suit:hover span {
+    opacity: 1;
 }
-.link_github{background-color:#336699;}
-.link_twitter{background-color:#33ccff;}
-.link_codepen{background-color:#663399;}
-.link_blog{background-color:#ffcc00;}
-.link_google{background-color:#cc3333;}*/
+
 div.social-wrap h3{
     color: #C94087;
     font-size: 28px;
@@ -603,75 +662,13 @@ article.portfolio section .port_content{
 
 @media only screen and (min-width: 1880px) {
 body{
-background: url('../images/full_page.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;}
+
 aside h3{
     color: #cc00cc;
 }
     }
 
-/* Helper classes */
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
 
 /* Print styles */
 

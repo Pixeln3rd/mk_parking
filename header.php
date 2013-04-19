@@ -24,11 +24,11 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">Michael Kaminski</h1>
-                <nav>
+             <nav>
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="http://michaelkaminski.me/index.php" class="hint hint--bottom" data-hint="Go to my homepage.">Home</a></li>
+                        <li><a href="http://michaelkaminski.me/portfolio.php" class="hint hint--bottom" data-hint="Check out my work.">Portfolio</a></li>
+                        <li><a href="http://michaelkaminski.me/contact.php" class="hint hint--bottom" data-hint="Drop me a line.">Contact</a></li>
                     </ul>
                 </nav>
             </header>
